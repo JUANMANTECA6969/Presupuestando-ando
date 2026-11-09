@@ -1,0 +1,10 @@
+{
+  "name": "presupuestando-ando",
+  "private": true,
+  "description": "Raíz para el despliegue en Vercel (función /api + frontend)",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "openai": "^7.53.0"
+  }
+}

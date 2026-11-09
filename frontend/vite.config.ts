@@ -11,5 +11,6 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  server: { port: 5173 },
+  // En desarrollo /api va al backend Express; en Vercel es la función serverless
+  server: { port: 5173, proxy: { '/api': 'http://localhost:3000' } },
 })
